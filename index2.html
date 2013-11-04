@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+  <script src="/assets/jquery.js"></script>
+  <title>Vanilla Finance</title>
+  <link href="/normalize.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Prosto+One' rel='stylesheet' type='text/css'>
+  <style>
+    header {
+      background: url("http://i.imgur.com/OcY5xs0.jpg");
+      background-size: cover;
+      text-align: center;
+      color: white;
+      font-family: 'Prosto One', cursive;
+    }
+    h1  {
+      font-size: 50px;
+      padding: 300px 0px 0px 0px;
+      margin: 0;
+    }
+    ul  {
+      padding: 0px;
+      margin: 50px 0px 50px 0px;
+      background: rgba(255, 255, 255, .6)
+    }
+    li  {
+      display: inline;
+      padding: 0px 50px 0px 50px;
+      color: black;
+      font-size: 24px;
+    }
+    div {
+      height: 200px;
+      max-width: 800px;
+      margin: 30px auto;
+      font-family: "avenir";
+      position: relative;
+    }
+    h2  {
+      color: rgba(250, 180, 0, .8);
+    }
+    body  {
+      background: rgba(255, 255, 250, 1);
+      margin: 50px;
+      color: rgba(255,255,255,.7);
+    }
+    p {
+      color: rgba(255,255,255,1);
+      padding: 10px;
+      height: 30px;
+      background: rgba(0,0,0,1);
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    }
+    small {
+      opacity: 0;
+    }
+    .first {
+      background-image: url("http://i.imgur.com/BcOJgZY.png");
+      background-size: cover;
+    }
+    .second {
+      background-image: url("http://i.imgur.com/1pCeX51.jpg?1");
+      background-size: cover;
+    }
+    .third {
+      background-image: url("http://i.imgur.com/F3eULmP.jpg");
+      background-size: cover;
+    }
+    .show-description p {
+      height: 100px;
+    }
+    .show-description small {
+      opacity: 1;
+    }
+    @media (max-width: 500px) {
+      h1  {
+        font-size: 20px;
+      }
+      ul  {
+        margin: 10 auto;
+      }
+      li  {
+        display: block;
+        font-size: 14px;
+      }
+      div {
+        padding: 20px;
+      }
+      body  {
+        margin: 0px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Understanding Finance</h1>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Stories</a></li>
+      <li><a href="#">Pictures</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+
+  <div class="first show-description">
+  <p>Current Account<br />
+  <small>This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test.</small></p>
+  </div>
+
+  <div class="second show-description">
+  <p>Debit Card<br />
+  <small>This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test.</small></p>
+  </div>
+
+  <div class="third show-description">
+  <p>Student Loan<br />
+  <small>This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test.</small></p>
+  </div>
+
+<script>
+$('div').on('click', function () {
+  $(this).toggleClass('show-description');});
+</script>
+</body>
